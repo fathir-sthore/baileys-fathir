@@ -56,7 +56,8 @@ const normalizeNewsletterJid = (idOrJid: string): string => {
 
 export const makeNewsletterSocket = (config: SocketConfig) => {
 	const sock = makeGroupsSocket(config)
-	const { query, generateMessageTag, logger } = sock
+	const { query, generateMessageTag } = sock
+const logger = config.logger
 
 	const executeWMexQuery = <T>(variables: Record<string, unknown>, queryId: string, dataPath: string): Promise<T> => {
 		return genericExecuteWMexQuery<T>(variables, queryId, dataPath, query, generateMessageTag)

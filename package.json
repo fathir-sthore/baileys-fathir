@@ -1,7 +1,7 @@
 {
-  "name": "baileys",
+  "name": "@fathirsthore/baileys",
   "type": "module",
-  "version": "7.0.0-rc13",
+  "version": "1.0.0",
   "description": "A WebSockets library for interacting with WhatsApp Web | Patched: Node23+ support, custom newsletter join, panel console",
   "keywords": [
     "whatsapp",
